@@ -1,0 +1,10 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Generated tournament data
+tournament.json
+
+# Temporary manual test files
+test_standings_manual.py
+test_storage_manual.py

@@ -54,3 +54,7 @@ def record_score(fixtures, fixture_id, home_score, away_score):
     fixture["status"] = "played"
 
     return fixture
+
+def list_fixtures(fixtures):
+    # Return all tournament fixtures
+    return fixtures

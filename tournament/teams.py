@@ -3,6 +3,10 @@ def register_team(teams, name):
     # Remove unnecessary spaces around the team name
     name = name.strip()
 
+    # Prevent registration beyond the tournament limit
+    if len(teams) >= 8:
+        raise ValueError("A tournament can have a maximum of 8 teams.")
+
     # Validate the team name length
     if len(name) < 2 or len(name) > 30:
         raise ValueError("Team name must be between 2 and 30 characters.")
